@@ -1,0 +1,9 @@
+<!-- app/views/users/new.html.erb -->
+
+<h1>ユーザー登録</h1>
+<%= form_for @user do |f| %>
+  <p>名前: <%= f.text_field :name %></p>
+  <p>容姿: <%= f.text_field :appearance %></p>
+  <p>画像URL: <%= f.text_field :image_url %></p>
+  <%= f.submit "登録" %>
+<% end %>

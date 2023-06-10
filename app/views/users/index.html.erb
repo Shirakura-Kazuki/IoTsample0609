@@ -1,0 +1,17 @@
+<!-- app/views/users/index.html.erb -->
+
+<h1>出力フォーム</h1>
+<table>
+  <tr>
+    <th>名前</th>
+    <th>容姿</th>
+    <th>画像URL</th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.appearance %></td>
+      <td><%= user.image_url %></td>
+    </tr>
+  <% end %>
+</table>
